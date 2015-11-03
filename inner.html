@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<html>  
+  <head>  
+    <meta charset="utf-8">  
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,400' rel='stylesheet' type='text/css'> 
+    <link href="styles/style.css" rel="stylesheet"> 
+    <title>Nerds - shop</title>
+  </head> 
+  <body>  
+    <header class="main-header"> 
+      <div class="container">
+          <div class="logo">
+            <a href="#"><img src="img/nerds-logo.png"></a>
+          </div> 
+          <nav class="main-navigator">
+              <ul>
+                  <li><a href="#">Студия</a></li> 
+                  <li><a href="#">Клиенты</a></li>
+                  <li><a href="#">Магазин</a></li>
+                  <li><a href="#">Контакты</a></li>  
+              </ul>
+          </nav> 
+          <div class="user-block">
+            <a href="#" class="login">Корзина</a>
+          </div> 
+      </div>
+    </header>     
+    <main> 
+      <div class="row big-header">  
+        Добро пожаловать в магазин готовых макетов
+      </div>    
+      <div class="row container">
+      <div class="filter">  
+       <form class="filter-general" action="/echo" method="get"> 
+        <fieldset class="filter-price">
+            <legend>Стоимость:</legend>
+            <div class="filter-range"> 
+                <div class="range-control">
+                    <div class="scale"><div class="bar"></div></div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
+                </div>
+                <div class="price-control"> 
+                  <label> от 
+                    <input type="text" class="min-price" value="0">
+                  </label> 
+                  <label> до 
+                    <input type="text" class="max-price" value="15 000">
+                  </label>
+                </div>   
+            </div> 
+        </fieldset>  
+        <fieldset class="filter-sort">
+            <legend>Сетка:</legend>
+            <div>
+              <input type="radio" name="sort" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </div>
+            <div>
+              <input type="radio" name="sort" id="fix">
+              <label for="fix">Фиксированная</label>
+            </div>
+            <div>
+              <input type="radio" name="sort" id="rubber">
+              <label for="rubber">Резиновая</label>
+            </div>
+        </fieldset> 
+        <fieldset class="filter-feature">
+            <legend>Особенности:</legend>
+            <div>
+              <input type="checkbox" name="feature" id="slide" checked>
+              <label for="slide">Слайдер</label>
+            </div>
+            <div>
+              <input type="checkbox" name="feature" id="block">
+              <label for="block">Блок преимуществ</label>
+            </div>
+            <div>
+              <input type="checkbox" name="feature" id="newsletter" checked>
+              <label for="newsletter">Новости</label>
+            </div>
+            <div>
+              <input type="checkbox" name="feature" id="gallery">
+              <label for="gallery">Галерея</label>
+            </div>
+            <div>
+              <input type="checkbox" name="feature" id="shop">
+              <label for="shop">Корзина</label>
+            </div>
+        </fieldset> 
+        <input type="submit" class="btn btn-submit" value="Показать"> 
+        </form> 
+      </div> 
+      <div class="items">    
+        <div class="sorting"> 
+           <div class="sorting-range">
+            <span class="sort">Сортировать:</span>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По функционалу</a> 
+           </div>  
+           <div class="sorting-image">
+             <a href="#"><i class="icon-down-dir"></i></a>
+             <a href="#"><i class="icon-up-dir"></i></a>
+           </div>
+        </div> 
+        <div class="items-catalog">
+            <div class="items-thing">
+                <div class="items-level"> 
+                  <i class="round"></i>
+                  <i class="round"></i>
+                  <i class="round"></i>
+                </div>
+                <a href="#" class="items-image">
+                  <img src="img/aviator.jpg">
+                </a> 
+            </div>
+            <div class="items-thing">
+                <div class="items-level"> 
+                  <i class="round"></i>
+                  <i class="round"></i>
+                  <i class="round"></i>
+                </div>
+                <a href="#" class="items-image">
+                  <img src="img/travel.jpg">
+                </a> 
+            </div>
+            <div class="items-thing">
+                <div class="items-level"> 
+                  <i class="round"></i>
+                  <i class="round"></i>
+                  <i class="round"></i>
+                </div>
+                <a href="#" class="items-image">
+                  <img src="img/forte.jpg">
+                </a> 
+            </div>
+            <div class="items-thing">
+                <div class="items-level"> 
+                  <i class="round"></i>
+                  <i class="round"></i>
+                  <i class="round"></i>
+                </div>
+                <a href="#" class="items-image">
+                  <img src="img/foods.jpg">
+                </a> 
+            </div>
+            <div class="items-thing">
+                <div class="items-level"> 
+                  <i class="round"></i>
+                  <i class="round"></i>
+                  <i class="round"></i>
+                </div>
+                <a href="#" class="items-image">
+                  <img src="img/avenue.jpg">
+                </a> 
+            </div>
+            <div class="items-thing">
+                <div class="items-level"> 
+                  <i class="round"></i>
+                  <i class="round"></i>
+                  <i class="round"></i>
+                </div>
+                <a href="#" class="items-image">
+                  <img src="img/wears.jpg">
+                </a>
+            </div>
+        </div>   
+        <div class="paginator"> 
+            <span class="current">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a> 
+        </div>
+      </div>   
+     </div>   
+     <div class="row navigation">
+       <img src="img/navigation.png" alt="Карта"> 
+       <div class="contacts">
+           <div class="contacts-title"> 
+             Nerds Design Studio 
+           </div>
+           <div class="contacts-adress"> 
+             191186, Санкт-Петербург<br> 
+             ул. Б. Конюшенная, д. 19/18 
+           </div>
+           <div class="contacts-number"> 
+             тел. + 7 (812) 275-75-75 
+           </div> 
+           <a href="#" class="btn btn-finds">Напишите нам</a> 
+       </div>
+     </div>  
+    </main> 
+    <footer class="row main-footer">   
+      <div class="container">
+          <div class="footer-social">
+              <a href="#" class="social-btn social-btn-vk"></a>
+              <a href="#" class="social-btn social-btn-fb"></a>
+              <a href="#" class="social-btn social-btn-inst"></a>
+          </div> 
+          <div class="sale"> 
+              <div class="friend">  
+                Давайте дружить, это выгодно! 
+              </div> 
+              <p>Скидка 10% для друзей из социальных сетей.</p> 
+          </div>
+      </div>
+    </footer> 
+  </body>
+</html>
