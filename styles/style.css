@@ -1,0 +1,672 @@
+body {   
+    background: #ffffff; 
+    font-size: 15px;   
+    line-height: 22px; 
+    font-family: "Roboto", sans-serif; 
+    font-weight: 500; 
+}   
+
+.container { 
+    margin: 0 auto;   
+    width: 885px; 
+} 
+
+.row::before, .row::after { 
+    content: ''; 
+    display: table; 
+}  
+
+.row::after { 
+    clear: both; 
+}   
+
+a {
+    text-decoration: none; 
+} 
+
+.main-header { 
+    background: #ecebeb; 
+    padding-top: 20px;  
+    text-transform: uppercase;   
+}  
+
+.logo {    
+    float: left; 
+}       
+ 
+.main-navigator { 
+    float: left;   
+    padding-top: 20px;  
+    margin-left: 181px; 
+    width: 435px; 
+}  
+
+.main-navigator ul { 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    font-size: 0; 
+}  
+
+.main-navigator li { 
+    display: inline-block; 
+    padding-right: 45px; 
+    vertical-align: top; 
+    font-size: 14px;   
+    font-weight: 500; 
+    line-height: 30px;   
+}            
+
+.main-navigator li:last-child { 
+    padding-right: 0; 
+}          
+
+.main-navigator a { 
+    color: #000000;  
+    text-decoration: none; 
+}
+
+.main-navigator a:hover { 
+    color: #f04c54;        
+}  
+
+.main-navigator a:active { 
+     color: #bcbcbc; 
+} 
+
+.user-block { 
+    float: right;  
+    padding-top: 20px; 
+    width: 96px;  
+    font-size: 14px; 
+    line-height: 30px; 
+}  
+
+.login {   
+    display: inline-block;  
+    padding-left: 39px; 
+    vertical-align: top;  
+    position: relative;  
+    color: #000000; 
+}      
+
+.login::before { 
+    content: '';  
+    display: block;  
+    top: 0; 
+    position: absolute;  
+    left: 0;  
+    width: 30px; 
+    height: 30px; 
+    background: url('../img/shops.png') no-repeat; 
+}       
+
+.slider-square { 
+    background: #ebebeb; 
+} 
+
+.slider {   
+    width: 885px; 
+    height: 330px;    
+    background: #ecebeb;  
+    position: relative;   
+    margin: 0 auto; 
+}    
+
+.slider input[type="radio"] { 
+    position: absolute; 
+} 
+
+.slider-control { 
+    width: 60px; 
+    position: absolute; 
+    left: 49%; 
+    bottom: 95px; 
+    margin-left: -30px; 
+    height: 10px; 
+    text-align: center;  
+    z-index: 1000; 
+}  
+
+.slider-control label { 
+    display: inline-block; 
+    width: 4px; 
+    height: 4px; 
+    margin: 0 5px; 
+    border: 4px solid #ffffff; 
+    vertical-align: top; 
+    border-radius: 49%;  
+    cursor: pointer; 
+}   
+
+.slide {    
+    position: absolute;  
+    top: 0; 
+    left: 0;   
+    width: 100%; 
+    overflow: hidden; 
+    height: 100%;   
+    display: none; 
+}  
+
+.slide-text { 
+    width: 489px; 
+    padding: 30px 0; 
+    background: #ececec; 
+}  
+
+.slide-title { 
+    font-size: 36px;  
+    line-height: 36px; 
+}  
+
+.btn-links { 
+    display: block; 
+    width: 239px; 
+    margin-top: 30px; 
+    padding: 10px 0;  
+    text-align: center; 
+    font-size: 12px;      
+    color: #ffffff;   
+    text-transform: uppercase; 
+    background: #f04c54;  
+    border-radius: 3px; 
+}   
+
+.slide:first-child {   
+    background: url('../img/structure.png') no-repeat 100% 10px; 
+}   
+
+.slide:last-child { 
+     background: url('../img/calculator.png') no-repeat 100% 10px;
+} 
+
+#btn-1:checked ~ .slides .slide:first-child { 
+    display: block; 
+}  
+
+#btn-2:checked ~ .slides .slide:last-child { 
+    display: block; 
+} 
+  
+.features {   
+    padding: 81px 0;  
+    border-bottom: 1px solid #ececec; 
+} 
+
+.features-item {     
+    margin-right: 80px;  
+    float: left; 
+}     
+
+.features-item:last-child { 
+    margin-right: 0; 
+} 
+
+.features-item img { 
+    margin-bottom: 30px; 
+}  
+
+.features-item p { 
+    margin-bottom: 20px; 
+} 
+
+.btn-custom {  
+    color: #ffffff; 
+    padding: 10px 39px;     
+    text-transform: uppercase;  
+    border-radius: 3px;  
+    font-size: 12px; 
+}   
+
+.btn-first { 
+    background: #f04c54;      
+} 
+
+.btn-second { 
+    background: #3bca76; 
+}  
+
+.btn-third { 
+    background: #f1c946; 
+}  
+
+.story { 
+    margin-top: 81px; 
+}  
+
+.things { 
+    padding-bottom: 60px; 
+    border-bottom: 1px solid #ececec; 
+} 
+ 
+.left-column { 
+    float: left; 
+}  
+
+.right-column { 
+    float: right; 
+}    
+
+.left-column ul { 
+    list-style: none; 
+}  
+
+.right-column ul { 
+    list-style: none; 
+}    
+
+.left-column h3, .right-column h3 {    
+    font-size: 16px;  
+    font-family: "Roboto", sans-serif; 
+    margin-bottom: 30px;  
+    font-weight: 500;   
+    text-transform: uppercase; 
+} 
+
+.left-column li, .right-column li { 
+    margin-bottom: 30px;  
+    position: relative; 
+}  
+
+.left-column li::before, .right-column li::before { 
+    content: ''; 
+    position: absolute; 
+    left: -30px; 
+    top: 10px;  
+    width: 20px; 
+    border: 1px solid #f04c54; 
+} 
+
+.big-title {    
+     font-size: 36px;  
+     line-height: 36px; 
+}  
+
+.links { 
+    border-bottom: 1px solid #ececec; 
+} 
+
+.links-logo { 
+    float: left;  
+    width: 220px;   
+    margin-right: 110px;  
+    padding: 60px 0; 
+    text-align: center; 
+}      
+
+.links-logo:last-child { 
+     margin-right: 0; 
+} 
+
+.big-header { 
+     font-size: 41px;   
+     line-height: 46px; 
+     text-align: center;  
+     padding: 90px 269px;  
+     margin-bottom: 81px; 
+     text-transform: uppercase;  
+     background: #ececec;    
+}    
+  
+.filter { 
+    float: left;  
+    width: 239px;  
+    margin-right: 75px; 
+}    
+
+legend { 
+    font-size: 18px; 
+    line-height: 30px;  
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+} 
+ 
+fieldset { 
+    border: none; 
+}   
+
+.filter label { 
+    font-weight: 500; 
+} 
+
+.filter-range { 
+   width: 239px;  
+}  
+
+.range-control { 
+    margin-bottom: 15px; 
+    padding: 0 20px; 
+    height: 81px; 
+    position: relative; 
+    border-radius: 5px; 
+    background: #ececec;  
+    overflow: hidden; 
+}  
+
+.range-control .scale { 
+    margin-top: 39px; 
+    background: #dbdedf; 
+    height: 2px; 
+}   
+
+.range-control .bar { 
+    width: 75%; 
+    height: 2px; 
+    background: #10cc75; 
+} 
+
+.range-control .toggle { 
+    width: 4px; 
+    height: 4px; 
+    border-radius: 100%;  
+    position: absolute; 
+    top: 30px; 
+    left: 20px; 
+    border: 9px solid #ffffff; 
+    background: #ababab;   
+    cursor: pointer; 
+    box-shadow: 0 2px 1px 0 #cfcfcf;   
+}  
+
+.range-control .max-toggle { 
+    left: 149px; 
+}    
+
+.price-control label { 
+    text-transform: uppercase; 
+} 
+
+.price-control input { 
+    width: 60px; 
+    padding: 10px 5px; 
+    margin-left: 10px;   
+    border: none; 
+    background: #ececec;  
+    font-size: 16px; 
+    font-family: "Roboto", sans-serif;  
+    font-weight: 500;
+    text-align: center;   
+    color: #000000;   
+    border-radius: 5px; 
+}  
+
+.price-control .min-price { 
+    margin-right: 10px; 
+}  
+
+.price-control { 
+    whitespace: nowrap; 
+}   
+
+input[type="radio"], input[type="checkbox"] { 
+    display: none; 
+}    
+
+input[type="radio"] + label, input[type="checkbox"] + label { 
+    display: block; 
+    position: relative;  
+    margin-bottom: 20px; 
+    padding-left: 39px;  
+    font-size: 16px; 
+    font-weight: 500; 
+}  
+
+input[type="radio"] + label::before, input[type="checkbox"] + label::before { 
+    content: ''; 
+    display: block; 
+    width: 30px; 
+    position: absolute; 
+    height: 24px; 
+    top: 0;  
+    left: 0; 
+    background: url('../img/btn-radio.png') no-repeat; 
+}  
+
+input[type="checkbox"] + label::before { 
+    background: url('../img/btn-checkbox.png') no-repeat; 
+}   
+
+input[type="radio"]:checked + label::before { 
+    background: url('../img/btn-radio-checked.png') no-repeat; 
+} 
+
+input[type="checkbox"]:checked + label::before { 
+    background: url('../img/btn-checkbox-checked.png') no-repeat; 
+}    
+
+.btn-submit { 
+    margin-top: 39px; 
+    padding: 10px 45px; 
+    color: #000000;  
+    font-size: 12px; 
+    line-height: 18px; 
+    font-family: "Roboto", sans-serif;  
+    border-radius: 5px; 
+    background: #ececec;  
+    font-weight: 500; 
+    text-transform: uppercase;    
+    border: none; 
+}  
+
+.items { 
+    float: right;  
+    width: 560px; 
+}  
+
+.sorting { 
+    margin-bottom: 30px;   
+}   
+
+.sorting-range { 
+    font-size: 12px;  
+    line-height: 18px; 
+    text-transform: uppercase;    
+}  
+
+.sort { 
+    margin-right: 39px; 
+} 
+
+.sorting a {  
+    border-bottom: 1px dotted #10cc75;    
+    margin-right: 39px;  
+    color: #ececec; 
+}  
+
+.sorting a:last-child { 
+    margin-right: 0; 
+}  
+
+.items-thing {   
+    margin-right: 75px; 
+    display: inline-block;   
+    margin-bottom: 81px; 
+}      
+
+.items-thing:nth-child(2n) { 
+    margin-right: 0; 
+}  
+
+.items-level { 
+    width: 219px;    
+    height: 15px; 
+    border-radius: 4px 4px 0 0; 
+    padding: 10px;  
+    background: #ececec; 
+}  
+
+.round { 
+    display: inline-block; 
+    width: 3px;  
+    margin-right: 5px; 
+    height: 3px;  
+    background: #ffffff; 
+    border: 3px solid #ffffff;  
+    border-radius: 49%;  
+} 
+
+.sorting-range { 
+    width: 435px; 
+}      
+
+.paginator { 
+    margin-bottom: 81px; 
+} 
+
+.paginator .current { 
+   margin-right: 10px; 
+    padding: 10px 15px; 
+    background: #ffffff; 
+    font-size: 12px; 
+    line-height: 18px; 
+    color: #000000; 
+    border: 2px solid #ececec; 
+} 
+
+.paginator a { 
+    margin-right: 10px; 
+    padding: 10px 15px;   
+    background: #ececec; 
+    font-size: 12px; 
+    line-height: 18px; 
+    color: #000000; 
+    border: 2px solid #ececec;  
+    text-transform: uppercase; 
+}     
+
+.paginator a:hover { 
+    background: #c1c2cb;  
+    border: 2px solid #c1c2cb; 
+}   
+
+.paginator a:focus { 
+    background: #bcbcbc;  
+    border: 2px solid #bcbcbc;    
+} 
+
+.paginator a:last-child { 
+    margin-right: 0; 
+} 
+
+.navigation  { 
+     margin-top: 81px;   
+     position: relative; 
+     text-align: center;    
+     width: 100%;  
+}    
+
+.contacts { 
+     position: absolute;  
+     padding: 30px 20px 30px 20px; 
+     top: 90px;  
+     left: 159px;  
+     font-size: 16px; 
+     line-height: 20px; 
+     width: 239px; 
+     height: 219px;  
+     background: #ffffff;   
+     text-align: left;  
+}  
+
+.contacts-title {  
+    font-size: 16px; 
+    line-height: 30px;  
+    margin-bottom: 30px;  
+    text-transform: uppercase; 
+}  
+
+.contacts-adress { 
+    margin-bottom: 30px;  
+}   
+
+.contacts-number { 
+    margin-bottom: 30px; 
+} 
+
+.btn-finds { 
+    display: block; 
+    padding: 10px 49px; 
+    color: #ffffff; 
+    font-size: 12px;  
+    background: #f04c54;  
+    text-transform: uppercase; 
+    text-align: center;  
+    border-radius: 3px;  
+}   
+
+.main-footer { 
+    padding: 81px 0; 
+} 
+
+.footer-social { 
+     float: left; 
+}   
+
+.footer-social a {     
+     width: 60px; 
+     height: 60px;  
+     display: inline-block; 
+     background: #ececec;   
+     margin-right: 30px; 
+     border-radius: 49%; 
+}        
+
+.footer-social a:hover { 
+    background: #fc5b4f; 
+}  
+
+.footer-social a:focus { 
+     background: #bc4b5f; 
+} 
+ 
+.footer-social .social-btn-vk {      
+    background: #ececec url('../img/sprite-vk.png') no-repeat 49% 49%; 
+}  
+
+.footer-social .social-btn-fb {   
+     background: #ececec url('../img/sprite-fb.png') no-repeat 49% 49%; 
+}  
+
+.footer-social .social-btn-inst {   
+    background: #ececec url('../img/sprite-inst.png') no-repeat 49% 49%; 
+}  
+
+.footer-social .social-btn-vk:hover { 
+    background: #fc5b4f url('../img/sprite-vk.png') no-repeat 49% 49%; 
+}  
+
+.footer-social .social-btn-fb:hover { 
+    background: #fc5b4f url('../img/sprite-fb.png') no-repeat 49% 49%; 
+} 
+
+.footer-social .social-btn-inst:hover { 
+    background: #fc5b4f url('../img/sprite-inst.png') no-repeat 49% 49%; 
+} 
+
+.footer-social .social-btn-vk:focus { 
+    background: #bc4b5f url('../img/sprite-vk.png') no-repeat 49% 49%; 
+} 
+
+.footer-social .social-btn-fb:focus { 
+    background: #bc4b5f url('../img/sprite-fb.png') no-repeat 49% 49%; 
+}  
+
+.footer-social .social-btn-inst:focus { 
+     background: #bc4b5f url('../img/sprite-inst.png') no-repeat 49% 49%; 
+} 
+
+.sale { 
+     float: right; 
+}   
+
+.friend { 
+    font-size: 36px; 
+    line-height: 36px; 
+}      
+
+.sale p { 
+    font-size: 16px; 
+} 
+
+
